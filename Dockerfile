@@ -15,4 +15,4 @@ RUN pip install -r requirements.txt
 EXPOSE 8080
 
 # Run the Streamlit app
-CMD ["streamlit", "run", "appli.py", "--server.port=8501", "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
+CMD ["streamlit", "run", "appli.py", "--server.port=8080", "--server.enableCORS=false", "--server.enableXsrfProtection=false"]
