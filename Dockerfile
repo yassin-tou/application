@@ -10,6 +10,7 @@ COPY . /app
 # Install dependencies
 RUN pip install --upgrade pip
 RUN pip install streamlit
+RUN pip install -r requirements.txt
 
 # If you use extra libraries, put them in requirements.txt and uncomment:
 # RUN pip install -r requirements.txt
