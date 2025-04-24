@@ -7,13 +7,9 @@ WORKDIR /app
 # Copy everything from repo into container
 COPY . /app
 
-# Install dependencies
+# Install dependencies from requirements.txt
 RUN pip install --upgrade pip
-RUN pip install streamlit
 RUN pip install -r requirements.txt
-
-# If you use extra libraries, put them in requirements.txt and uncomment:
-# RUN pip install -r requirements.txt
 
 # Expose Streamlit's default port
 EXPOSE 8501
